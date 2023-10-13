@@ -46,15 +46,13 @@ const generateGame = function (singlegame) {
     <h5 class = "card text border-0 fw-normal"> Prezzo speciale di  ${singlegame.price}€</h5>
     <button onclick="deleteGame()" class="btn btn-sm btn-danger mt-5 mb-1 rounded-0 border-dark
      fst-italic" >Elimina</button>
-    <a class="btn btn-sm btn-warning mt-5 mb-1 rounded-0 border-danger fst-italic
-     href="backoffice.html?gameId=${singlegame._id}"> Modifica</a>
+     <a href="backoffice.html?gameId=${singlegame._id}" class="btn btn-sm btn-warning mt-5 mb-1 rounded-0 border-dark
+     fst-italic"> Edit /non funzionante</a>
     </div>
   </div>
     </div>
       `;
-    
 };
-
 
 const getSingleGame = function () {
   fetch("https://striveschool-api.herokuapp.com/api/product/" + gameId, {
