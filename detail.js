@@ -47,7 +47,7 @@ const generateGame = function (singlegame) {
     <button onclick="deleteGame()" class="btn btn-sm btn-danger mt-5 mb-1 rounded-0 border-dark
      fst-italic" >Elimina</button>
      <a href="backoffice.html?gameId=${singlegame._id}" class="btn btn-sm btn-warning mt-5 mb-1 rounded-0 border-dark
-     fst-italic"> Edit /non funzionante</a>
+     fst-italic"> Edit</a>
     </div>
   </div>
     </div>
