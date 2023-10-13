@@ -3,16 +3,16 @@ const renderGames = function (arrayofgames) {
 
   arrayofgames.forEach((game) => {
     const newcol = document.createElement("div");
-    newcol.classList.add("col-12", "col-sm-6", "col-md-3");
+    newcol.classList.add("col-12", "col-sm-6", "col-md-3", "my-2");
     newcol.innerHTML = `
-        <div class="card my-2">
-        <img src=" ${game.imageUrl}" class="card-img-top" alt="game cover">
+        <div class="card  border border-danger rounded-0 h-100">
+        <img src=" ${game.imageUrl}" class="card-img-top p-2" alt="game cover">
         <div class= "card-body"> 
         <h5 class= "card-title fw-bold"> ${game.name} </h5>
         <p class = "card-text"> ${game.description}</p>
         <p class = "card-text fst-italic">  ${game.brand}</p>
         <p class = "card text border-0"> ${game.price} €</p>
-        <a href="detail.html?gameId=${game._id}" class="btn btn-success">Scopri di più</a>
+        <a href="detail.html?gameId=${game._id}" class="btn btn-sm btn-danger">Scopri di più</a>
         </div>
       </div>
                 </div>
