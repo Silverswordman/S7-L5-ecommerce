@@ -12,7 +12,7 @@ const renderGames = function (arrayofgames) {
         <p class = "card-text"> ${game.description}</p>
         <p class = "card-text fst-italic">  ${game.brand}</p>
         <p class = "card text border-0"> ${game.price} €</p>
-        <a href="./detail.html?gameId= ${game._id}" class="btn btn-success">Details</a>
+        <a href="detail.html?gameId=${game._id}" class="btn btn-success">Scopri di più</a>
         </div>
       </div>
                 </div>
